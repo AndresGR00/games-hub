@@ -34,7 +34,7 @@ const generateMole = () => {
 
     const randomBox = allTheBoxes[randomNumber];
 
-    randomBox.innerHTML = `<img class="gh-w-game-mole" src="https://res.cloudinary.com/dbinlquvz/image/upload/v1702986233/5_GamesHub/Memory-Game/Reversed/mem-game_8_fcsrf7.png" width="80%">`;
+    randomBox.innerHTML = `<img class="gh-w-game-mole" src="https://res.cloudinary.com/dbinlquvz/image/upload/v1703090131/5_GamesHub/Whac_a_mole/Final_Mole_kn3bj8.png" width="100%">`;
 
     const clickHandler = () => {
       score++;

@@ -9,6 +9,6 @@ export const games = [
   },
   {
     name: "Whac a mole",
-    img: "https://d2a5isokysfowx.cloudfront.net/wp-content/uploads/2021/11/Prueba-Tecnica-1200x900.png",
+    img: "https://res.cloudinary.com/dbinlquvz/image/upload/v1703090865/5_GamesHub/Whac_a_mole/Captura_de_pantalla_2023-12-20_174716_bwpfr3.png",
   },
 ];
