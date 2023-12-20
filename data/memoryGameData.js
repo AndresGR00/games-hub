@@ -1,0 +1,18 @@
+export const CARDS = [
+    {id: 1, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986233/5_GamesHub/Memory-Game/Reversed/mem-game_8_fcsrf7.png'},
+    {id: 2, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986232/5_GamesHub/Memory-Game/Reversed/mem-game_7_dqe7xd.png'},
+    {id: 3, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_6_ghvowb.png'},
+    {id: 4, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_2_dgzlp6.png'},
+    {id: 5, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_5_v6usin.png'},
+    {id: 6, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_4_y4atuh.png'},
+    {id: 7, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_3_lra95l.png'},
+    {id: 8, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986229/5_GamesHub/Memory-Game/Reversed/mem-game_1_zttw76.png'},
+    {id: 9, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986233/5_GamesHub/Memory-Game/Reversed/mem-game_8_fcsrf7.png'},
+    {id: 10, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986232/5_GamesHub/Memory-Game/Reversed/mem-game_7_dqe7xd.png'},
+    {id: 11, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_6_ghvowb.png'},
+    {id: 12, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_2_dgzlp6.png'},
+    {id: 13, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_5_v6usin.png'},
+    {id: 14, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_4_y4atuh.png'},
+    {id: 15, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986230/5_GamesHub/Memory-Game/Reversed/mem-game_3_lra95l.png'},
+    {id: 16, img: 'https://res.cloudinary.com/dbinlquvz/image/upload/v1702986229/5_GamesHub/Memory-Game/Reversed/mem-game_1_zttw76.png'},
+]

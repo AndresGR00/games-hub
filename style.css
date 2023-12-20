@@ -1,0 +1,47 @@
+:root{
+  --gh-primary-font: Arial, Helvetica, sans-serif;
+
+  --gh-dark-blue-color: #020e18;
+  --gh-light-blue-color: #20639B;
+  /* --gh-aqua-color: #3CAEA3; */
+  /* --gh-yellow-color: #F6D55C; */
+  --gh-orange-color: #ED553B;
+  --gh-white-color: #f0efef;
+  /* --gh-black-color: #111111; */
+
+  --gb-t-purple-color: #6C7CFC;
+  --gb-t-blue-color: #04C4FC;
+  --gb-t-hover-color: #dbdbdb;
+
+
+  --gb-mem-black-color: #201f1f;
+  --gb-mem-red-color: rgb(71, 0, 0);
+  --gb-mem-dark-green-color: #8c8f03;
+  --gb-mem-light-green-color: #119448;
+
+  --gb-w-brown-color: #a04d0a;
+  --gb-w-turquoise-color: #2ebe8e;
+
+}
+
+html, body{  
+  width: 100%;
+  height: 100%;
+}
+
+*, *::before, *::after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, p, a, button {
+  font-family: var(--gh-primary-font);
+}
+
+
+#app{
+  width: 100%;
+  min-height: 100%;
+  padding: 40px 0;
+}

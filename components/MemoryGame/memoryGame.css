@@ -1,0 +1,98 @@
+#app.gb-mem-game-screen {
+  background: linear-gradient(
+    180deg,
+    var(--gb-mem-dark-green-color) 10%,
+    var(--gb-mem-light-green-color) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gh-mem-game-screen-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.gh-mem-game-count{
+  color: var(--gh-white-color);
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+/* Contenedor Cartas */
+
+.gh-mem-game-cards-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Cards */
+
+.gh-mem-game-card{
+  width: 130px;
+  height: 130px;
+  background-color: var(--gb-mem-red-color);
+  border-radius: 10px;
+  /* border: 4px solid var(--gh-white-color); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.6s;
+}
+
+.gh-mem-game-card:hover {
+  transform: scale(1.1);
+}
+
+.gh-mem-game-card img{
+  width: 100%;
+  height: 100%;
+  background-color: var(--gh-white-color);
+  border-radius: 10px;
+}
+
+
+
+.gh-mem-game-card.flipped {
+  transform: rotateY(180deg);
+}
+
+/* Buttons */
+
+.gh-mem-game-buttons{
+  display: flex;
+  gap: 20px;
+}
+
+.gb-mem-game-restart, .gb-mem-game-back {
+    background-color: var(--gh-white-color);
+    color: var(--gb-mem-black-color);
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.gb-mem-game-restart:hover, .gb-mem-game-back:hover {
+  background-color: var(--gb-mem-black-color);
+  color: var(--gh-white-color);
+}
+
+@media screen and (max-width: 625px){
+  .gh-mem-game-cards-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media screen and (max-width: 470px){
+  .gh-mem-game-cards-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

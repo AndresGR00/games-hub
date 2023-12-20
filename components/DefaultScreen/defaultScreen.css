@@ -1,0 +1,66 @@
+#app.gb-default-screen {
+  background-color: var(--gh-dark-blue-color);
+}
+
+#app.gb-default-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.gb-default-title {
+  font-size: 50px;
+  color: var(--gh-white-color);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.gb-default-games-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 20px;
+}
+
+.gb-default-game-container {
+  background-color: var(--gh-white-color);
+  height: 278px;
+  width: 250px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+.gb-default-game-image {
+  height: 170px;
+  width: 230px;
+  border-radius: 10px;
+}
+
+.gb-default-game-name {
+  text-transform: uppercase;
+  color: var(--gh-dark-blue-color);
+}
+
+.gb-default-game-button {
+  width: 230px;
+  height: 35px;
+  border-radius: 12px;
+  background-color: var(--gh-orange-color);
+  color: var(--gh-white-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.gb-default-game-button:hover, .gb-default-game-button:active {
+  background-color: var(--gh-white-color);
+  color: var(--gh-orange-color);
+  border: 2px solid var(--gh-orange-color);
+}

@@ -1,0 +1,113 @@
+#app.gb-t-game-screen {
+  background: linear-gradient(
+    180deg,
+    var(--gb-t-purple-color) 10%,
+    var(--gb-t-blue-color) 100%
+  );
+}
+#app.gb-t-game-display {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.gb-t-game-choose-start {
+  background-color: var(--gh-white-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 30px;
+  margin: 30px;
+  border-radius: 10px;
+}
+.gh-t-who-start {
+  font-size: 25px;
+  color: var(--gh-light-blue-color);
+}
+.gb-t-game-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.gb-t-game-x-img,
+.gb-t-game-o-img {
+  width: 200px;
+  padding: 20px;
+  border-radius: 10px;
+}
+.gb-t-game-x-img:hover,
+.gb-t-game-o-img:hover {
+  background-color: var(--gb-t-hover-color);
+}
+
+/* Board Screen */
+
+.gb-t-game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  background-color: var(--gh-white-color);
+  border-radius: 10px;
+}
+
+.gb-t-game-box {
+  width: 180px;
+  height: 180px;
+}
+
+.gb-t-game-buttons{
+    display: flex;
+    gap: 30px;
+}
+.gb-t-game-restart, .gb-t-game-back {
+    background-color: var(--gh-white-color);
+    color: var(--gh-light-blue-color);
+    width: 100px;
+    height: 35px;
+    border: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.gb-t-game-restart:hover, .gb-t-game-back:hover {
+    background-color: var(--gh-light-blue-color);
+    color: var(--gh-white-color);
+}
+
+@media screen and (max-width: 740px) {
+  .gb-t-game-box {
+    width: 170px;
+    height: 170px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .gb-t-game-box {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .gb-t-game-options {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gb-t-game-box {
+    width: 110px;
+    height: 110px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .gb-t-game-box {
+    width: 90px;
+    height: 90px;
+  }
+}
