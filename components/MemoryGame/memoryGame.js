@@ -7,7 +7,7 @@ let card1;
 let card2;
 let score = 0;
 
-CARDS.sort(() => Math.random() - Math.random());
+
 
 const checkEnd = () => {
   const allTheImgs = document.querySelectorAll('.gh-mem-game-card-img');
@@ -86,6 +86,8 @@ const printMemoryGame = () => {
     <button class="gb-mem-game-back">Back</button>
   </div>
 </div>`;
+
+CARDS.sort(() => Math.random() - Math.random());
 
 CARDS.forEach((card) => {
   const cardsContainer = document.querySelector('.gh-mem-game-cards-container')
