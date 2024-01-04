@@ -6,7 +6,7 @@ let count = 0;
 let card1;
 let card2;
 let score = 0;
-
+let isComparisonInProgress = false;
 
 
 const checkEnd = () => {
@@ -24,6 +24,7 @@ const resetValues = () => {
   count = 0;
   card1 = undefined;
   card2 = undefined;
+  isComparisonInProgress = false;
 }
 
 const resetCard = (card) => {
@@ -34,6 +35,11 @@ const resetCard = (card) => {
 }
 
 const check = () => {
+  if (isComparisonInProgress) {
+    return;
+  }
+  isComparisonInProgress = true;
+
   if(card1.cardData.img === card2.cardData.img){
     score++
     const scoreElement = document.querySelector('.gh-mem-game-count');
@@ -45,6 +51,7 @@ const check = () => {
       resetCard(card1);
       resetCard(card2);
       resetValues();
+      isComparisonInProgress = false;
     }, 700);
   }
   const scoreElement = document.querySelector('.gh-mem-game-count');
@@ -53,8 +60,8 @@ const check = () => {
 }
 
 const selected = (divCard, card) => {
-  if(divCard.innerHTML !== ''){
-    return
+  if (divCard.innerHTML !== '' || isComparisonInProgress) {
+    return;
   }
   if(count < 2){
     count++
@@ -76,7 +83,8 @@ const printMemoryGame = () => {
   count = 0;
   score = 0;
   const app = document.querySelector("#app");
-  app.innerHTML = `<div class="gh-mem-game-screen-board">
+  app.innerHTML = `<h1 class="gb-t-h1">Memory Game</h1>
+  <div class="gh-mem-game-screen-board">
   <div class="gh-mem-game-counter">
     <h3 class="gh-mem-game-count">Score: ${score}</h3>
   </div>

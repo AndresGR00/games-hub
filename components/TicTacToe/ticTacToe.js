@@ -5,6 +5,7 @@ import "./ticTacToe.css";
 let isPlayerOneX;
 let Buttons;
 let moves = 0;
+let turn;
 
 export const TicTacToe = () => {
   const app = document.querySelector("#app");
@@ -12,29 +13,39 @@ export const TicTacToe = () => {
   app.classList.remove("gb-default-screen", "gb-default-display");
   app.classList.add("gb-t-game-screen", "gb-t-game-display");
 
-  app.innerHTML = `<div class="gb-t-game-choose-start">
+  app.innerHTML = `<h1 class="gb-t-h1">TicTacToe</h1>
+  <div class="gb-t-game-choose-start">
   <h3 class="gh-t-who-start">Who starts?</h3>
   <div class="gb-t-game-options">
       <img src="${X}" alt="X" class="gb-t-game-x-img" />    
       <img src="${O}" alt="O" class="gb-t-game-o-img" />    
   </div>
+</div>
+<div class="gb-t-game-buttons">
+  <button class="gb-t-game-back">Back</button>
 </div>`;
-
-  
 
   const imageX = document.querySelector(".gb-t-game-x-img");
   imageX.addEventListener("click", () => {
     isPlayerOneX = true;
+    turn = "X";
     moves = 0;
     printBoard();
   });
   const imageO = document.querySelector(".gb-t-game-o-img");
   imageO.addEventListener("click", () => {
     isPlayerOneX = false;
+    turn = "O";
     moves = 0;
     printBoard();
   });
+  const backButton = document.querySelector(".gb-t-game-back");
+  backButton.addEventListener("click", printDefaultScreen);
+};
 
+const updateTurn = (updateTurn) => {
+  const turnP = document.querySelector(".gb-t-game-turn-p");
+  turnP.textContent = `Turn of the: ${updateTurn}`;
 };
 
 const nextMove = (e) => {
@@ -49,7 +60,8 @@ const nextMove = (e) => {
         : `<img src="${O}" alt="O" width="80%">`;
       isPlayerOneX = !isPlayerOneX;
 
-      moves++
+      updateTurn(isPlayerOneX ? "X" : "O");
+      moves++;
     }
     checkVictory(0, 1, 2);
     checkVictory(3, 4, 5);
@@ -65,15 +77,15 @@ const nextMove = (e) => {
 };
 
 const checkDraw = () => {
-  if(moves === Buttons.length){
+  if (moves === Buttons.length) {
     setTimeout(() => {
-      alert('Empate');
+      alert("Empate");
       Buttons.forEach((button) => {
         button.disabled = true;
       });
     }, 150);
   }
-}
+};
 
 const checkVictory = (c1, c2, c3) => {
   const symbol = Buttons[c1].innerHTML;
@@ -98,7 +110,9 @@ const checkVictory = (c1, c2, c3) => {
 const printBoard = () => {
   const app = document.querySelector("#app");
   app.innerHTML = "";
-  app.innerHTML = `<div class="gb-t-game-board">
+  app.innerHTML = `<h1 class="gb-t-h1">TicTacToe</h1>
+  <div class="gb-t-game-turn"><p class="gb-t-game-turn-p">Turn of the: ${turn} </p></div>
+  <div class="gb-t-game-board">
   <button class="gb-t-game-box"></button>
   <button class="gb-t-game-box"></button>
   <button class="gb-t-game-box"></button>

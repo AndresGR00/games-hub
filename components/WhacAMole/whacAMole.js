@@ -57,7 +57,8 @@ const generateMole = () => {
 
 const printWhacAMole = () => {
   const app = document.querySelector("#app");
-  app.innerHTML = `<div class="gm-w-game-score-and-timer">
+  app.innerHTML = `<h1 class="gb-t-h1">Whac A Mole</h1>
+  <div class="gm-w-game-score-and-timer">
   <h3 class="gh-w-game-score">Score: ${score}</h3>
   <p class="gh-w-game-minimum-score">Score required to win: 25</p>
   <div class="gh-w-game-timer"></div>

@@ -46,6 +46,19 @@
   background-color: var(--gb-t-hover-color);
 }
 
+/* H1 Title */
+.gb-t-h1{
+  color: var(--gh-white-color);
+}
+
+/* TurnP */
+
+.gb-t-game-turn-p{
+  color: var(--gh-white-color);
+  font-weight: 500;
+  font-size: 20px;
+}
+
 /* Board Screen */
 
 .gb-t-game-board {

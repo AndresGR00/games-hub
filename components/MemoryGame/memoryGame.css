@@ -88,11 +88,37 @@
 
 @media screen and (max-width: 625px){
   .gh-mem-game-cards-container{
-    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .gh-mem-game-card{
+    width: 110px;
+    height: 110px;
   }
 }
-@media screen and (max-width: 470px){
+@media screen and (max-width: 520px){
   .gh-mem-game-cards-container{
-    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .gh-mem-game-card{
+    width: 100px;
+    height: 100px;
+  }
+}
+@media screen and (max-width: 450px){
+  .gh-mem-game-cards-container{
+    gap: 10px;
+  }
+  .gh-mem-game-card{
+    width: 80px;
+    height: 80px;
+  }
+}
+@media screen and (max-width: 380px){
+  .gh-mem-game-cards-container{
+    gap: 8px;
+  }
+  .gh-mem-game-card{
+    width: 68px;
+    height: 68px;
   }
 }
